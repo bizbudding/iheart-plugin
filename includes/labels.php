@@ -22,6 +22,17 @@ add_filter( 'post_class', function( $classes ) {
 	return $classes;
 });
 
+add_filter( 'mai_entry_image_link', function( $html, $args, $original_args ) {
+	if ( ! ( isset( $args['content'] ) || in_array( 'post', $args['content'] ) ) ) {
+		return $html;
+	}
+	$labels = iheart_get_category_labels_html();
+	if ( ! $labels ) {
+		return $html;
+	}
+	return $html . $labels;
+}, 10, 3 );
+
 // Add labels to archive entries.
 add_filter( 'genesis_markup_entry-image-link_close', function( $open ) {
 	if ( ! ( is_home() || is_category() || is_tag() || is_search() ) ) {
