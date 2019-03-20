@@ -4,7 +4,7 @@
  * Plugin Name:     iHeart Plugin
  * Plugin URI:      https://iheartpublix.com
  * Description:     Category Labels and CTA's for iHeart sites.
- * Version:         0.1.0
+ * Version:         0.2.0
  *
  * Author:          BizBudding
  * Author URI:      https://bizbudding.com
@@ -64,7 +64,7 @@ final class iHeart_Plugin {
 	 */
 	public function __clone() {
 		// Cloning instances of the class is forbidden.
-		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'textdomain' ), '1.0' );
+		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'iheart-plugin' ), '1.0' );
 	}
 
 	/**
@@ -76,7 +76,7 @@ final class iHeart_Plugin {
 	 */
 	public function __wakeup() {
 		// Unserializing instances of the class is forbidden.
-		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'textdomain' ), '1.0' );
+		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'iheart-plugin' ), '1.0' );
 	}
 
 	/**
@@ -90,7 +90,7 @@ final class iHeart_Plugin {
 
 		// Plugin version.
 		if ( ! defined( 'IHEARTPUBLIX_PLUGIN_VERSION' ) ) {
-			define( 'IHEARTPUBLIX_PLUGIN_VERSION', '0.1.0' );
+			define( 'IHEARTPUBLIX_PLUGIN_VERSION', '0.2.0' );
 		}
 
 		// Plugin Folder Path.
@@ -174,7 +174,7 @@ final class iHeart_Plugin {
 		}
 
 		// Setup the updater.
-		// $updater = Puc_v4_Factory::buildUpdateChecker( 'https://github.com/bizbudding/starter-plugin/', __FILE__, 'textdomain' );
+		// $updater = Puc_v4_Factory::buildUpdateChecker( 'https://github.com/bizbudding/starter-plugin/', __FILE__, 'iheart-plugin' );
 	}
 
 	/**
