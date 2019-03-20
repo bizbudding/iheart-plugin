@@ -174,7 +174,7 @@ final class iHeart_Plugin {
 		}
 
 		// Setup the updater.
-		// $updater = Puc_v4_Factory::buildUpdateChecker( 'https://github.com/bizbudding/starter-plugin/', __FILE__, 'iheart-plugin' );
+		$updater = Puc_v4_Factory::buildUpdateChecker( 'https://github.com/bizbudding/iheart-plugin/', __FILE__, 'iheart-plugin' );
 	}
 
 	/**
