@@ -4,7 +4,7 @@
  * Plugin Name:     iHeart Plugin
  * Plugin URI:      https://iheartpublix.com
  * Description:     Category Labels and CTA's for iHeart sites.
- * Version:         0.2.0
+ * Version:         0.2.1
  *
  * Author:          BizBudding
  * Author URI:      https://bizbudding.com
@@ -90,7 +90,7 @@ final class iHeart_Plugin {
 
 		// Plugin version.
 		if ( ! defined( 'IHEARTPUBLIX_PLUGIN_VERSION' ) ) {
-			define( 'IHEARTPUBLIX_PLUGIN_VERSION', '0.2.0' );
+			define( 'IHEARTPUBLIX_PLUGIN_VERSION', '0.2.1' );
 		}
 
 		// Plugin Folder Path.
