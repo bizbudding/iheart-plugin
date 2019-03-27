@@ -87,18 +87,6 @@ li.category-label a::before {
 	position: relative;
 }
 
-.flex-grid .entry.has-labels .entry-image-link::after,
-.coupon-archive .entry.has-labels .entry-image-link::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-image: -o-radial-gradient( top left, circle, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 50% );
-	background-image: radial-gradient( circle at top left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 50% );
-}
-
 .flex-grid ul.category-labels,
 .coupon-archive ul.category-labels {
 	position: absolute;
@@ -115,17 +103,6 @@ li.category-label a::before {
 
 .single-post .featured-image {
 	position: relative;
-}
-
-.single-post .featured-image::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-image: -o-radial-gradient( top left, circle, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 50% );
-	background-image: radial-gradient( circle at top left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 50% );
 }
 
 .single-post .featured-image ul.category-labels {
